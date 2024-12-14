@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="menu">
+      <UniqueIdentifier>{3936624a-b449-4baa-96fe-a97004e09cdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{b45ffd85-8be4-4f87-9627-0018c4bc988a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="directx">
+      <UniqueIdentifier>{32f1115a-51a1-4c0d-96f8-179e2478a926}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{c01265cb-3dbc-4b92-9e7f-5af7e6879b27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat">
+      <UniqueIdentifier>{babbc14a-094b-4e23-8d9c-5c70e61f9413}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="menu\menu.cpp" />
+    <ClCompile Include="cheat\cheats.cpp">
+      <Filter>cheat</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp" />
+    <ClCompile Include="imgui\imgui_demo.cpp" />
+    <ClCompile Include="imgui\imgui_draw.cpp" />
+    <ClCompile Include="imgui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui\imgui_tables.cpp" />
+    <ClCompile Include="imgui\imgui_widgets.cpp" />
+    <ClCompile Include="utils\globals.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utils\includes.h" />
+    <ClInclude Include="menu\menu.h" />
+    <ClInclude Include="cheat\memory.h" />
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_impl_dx9.h" />
+    <ClInclude Include="imgui\imgui_impl_win32.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="imgui\imstb_rectpack.h" />
+    <ClInclude Include="imgui\imstb_textedit.h" />
+    <ClInclude Include="imgui\imstb_truetype.h" />
+    <ClInclude Include="directx\d3dx9.h" />
+    <ClInclude Include="directx\d3dx9anim.h" />
+    <ClInclude Include="directx\d3dx9core.h" />
+    <ClInclude Include="directx\d3dx9effect.h" />
+    <ClInclude Include="directx\d3dx9math.h" />
+    <ClInclude Include="directx\d3dx9mesh.h" />
+    <ClInclude Include="directx\d3dx9shader.h" />
+    <ClInclude Include="directx\d3dx9shape.h" />
+    <ClInclude Include="directx\d3dx9tex.h" />
+    <ClInclude Include="directx\d3dx9xof.h" />
+    <ClInclude Include="directx\D3DX11.h" />
+    <ClInclude Include="directx\D3DX11async.h" />
+    <ClInclude Include="directx\D3DX11core.h" />
+    <ClInclude Include="directx\D3DX11tex.h" />
+    <ClInclude Include="utils\globals.h" />
+    <ClInclude Include="cheat\vector.h" />
+    <ClInclude Include="cheat\handle_hijack.h" />
+    <ClInclude Include="cheat\cheat.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="directx\d3dx9math.inl" />
+    <None Include="x64\Debug\semcagada.pdb" />
+    <None Include="semcagada\x64\Release\vc143.pdb" />
+    <None Include="semcagada\x64\Release\semcagada.tlog\CL.command.1.tlog" />
+    <None Include="semcagada\x64\Release\semcagada.tlog\CL.read.1.tlog" />
+    <None Include="semcagada\x64\Release\semcagada.tlog\CL.write.1.tlog" />
+    <None Include="semcagada\x64\Release\semcagada.tlog\link.command.1.tlog" />
+    <None Include="semcagada\x64\Release\semcagada.tlog\link.read.1.tlog" />
+    <None Include="semcagada\x64\Release\semcagada.tlog\link.write.1.tlog" />
+    <None Include="semcagada\x64\Release\semcagada.tlog\semcagada.lastbuildstate" />
+    <None Include="semcagada\x64\Release\semcagada.tlog\unsuccessfulbuild" />
+    <None Include="imgui\imgui.ini" />
+    <None Include="semcagada\x64\Release\semcagada.exe.recipe" />
+    <None Include="x64\Release\imgui.ini" />
+    <None Include="semcagada\x64\Release\semcagada.iobj" />
+    <None Include="semcagada\x64\Release\semcagada.ipdb" />
+    <None Include="semcagada\x64\Release\semcagada.tlog\Cl.items.tlog" />
+    <None Include="semcagada\x64\Release\semcagada.tlog\link.secondary.1.tlog" />
+    <None Include="x64\Release\semcagada.exe" />
+    <None Include="x64\Release\semcagada.pdb" />
+    <None Include="imgui.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="semcagada\x64\Release\semcagada.log" />
+    <Text Include="semcagada\x64\Release\semcagada.Build.CppClean.log" />
+    <Text Include="semcagada\x64\Release\semcagada.vcxproj.FileListAbsolute.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="directx\d3d9.lib" />
+    <Library Include="directx\d3d11.lib" />
+    <Library Include="directx\d3dx9.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="semcagada\x64\Release\imgui.obj" />
+    <Object Include="semcagada\x64\Release\imgui_demo.obj" />
+    <Object Include="semcagada\x64\Release\imgui_draw.obj" />
+    <Object Include="semcagada\x64\Release\imgui_impl_dx9.obj" />
+    <Object Include="semcagada\x64\Release\imgui_impl_win32.obj" />
+    <Object Include="semcagada\x64\Release\imgui_tables.obj" />
+    <Object Include="semcagada\x64\Release\imgui_widgets.obj" />
+    <Object Include="semcagada\x64\Release\main.obj" />
+    <Object Include="semcagada\x64\Release\cheats.obj" />
+    <Object Include="semcagada\x64\Release\globals.obj" />
+    <Object Include="semcagada\x64\Release\menu.obj" />
+  </ItemGroup>
+</Project>
